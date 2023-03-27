@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
+:root {
+    --Body-Font: 'Roboto', sans-serif;
+    --White: #fff;
+    --Bluish-Green: rgb(0, 37, 54);
+    --Description: rgba(168, 255, 255, 0.561);
+    --Border: rgba(128, 128, 128, 0.45);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 500 1em var(--Body-Font);   
+}
+
+.main {
+    width: 370px;     
+    margin: 20px auto;    
+}
+
+.mockup {
+    width: 370px;
+    height: 490px;        
+    padding: 45px 40px 0;
+    background: var(--Bluish-Green);    
+}
+
+.img {
+    display: block;
+    width: 355px;     
+    margin-top: -65px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;           
+}
+
+.mockup__title {
+     color: var(--White);
+     text-align: center;
+     margin-bottom: 20px;
+}
+
+.description {
+     color: var(--Description);
+     text-align: center;
+}
+
+.login {
+    width: 370px;
+    height: 492px;
+    padding: 40px 45px;
+    border: 2px solid var(--Border);
+    border-radius: 0 0 16px 16px;
+    background-color: var(--White);
+}
+
+.login__title {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--Border);
+    border-radius: 5px;   
+    margin: 8px 0 25px;     
+    outline: none;
+}
+
+span {
+    font-weight: 700;     
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 50px;
+    margin: 25px 0 10px;
+    font: 500 1em var(--Body-Font);    
+    color: var(--White);
+    letter-spacing: 1px;
+    background-color: var(--Bluish-Green);
+    border: none;
+    border-radius: 5px;
+    outline: none;  
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+} 
+
+input[type="checkbox"] {
+    margin-top: -50px;
+    width: 30px;
+    border: 1px solid var(--Border);
+}
+
+.terms {
+    color: var(--Bluish-Green);
+    text-decoration: underline;    
+}
+
+p {
+    font: 500 1.1em var(--Body-Font);   
+    line-height: 25px;
+}
+
+.attribution,
+p {
+    text-align: center;
+}
+/*******Desktop ViewPort********/
+@media screen and (min-width: 1200px){
+    body {        
+        background: url(Assets/Background.png) no-repeat center;          
+    }
+
+    .main {
+        display: flex;       
+        width: 740px;               
+        margin: 140px auto;
+    } 
+
+    .mockup {
+        border-radius: 16px 0 0 16px;
+    }    
+
+    .login {
+        border-radius: 0 16px 16px 0;
+    }
+}
